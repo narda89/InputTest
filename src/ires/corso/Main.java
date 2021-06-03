@@ -37,7 +37,7 @@ public class Main {
 
 
         //primo round di confronto
-        if (n1 > n2){
+        if (n1 >= n2){
             nc = n1;
             position = "primo";
         } else {
@@ -52,8 +52,14 @@ public class Main {
         } //in caso contrario, nc rimane il numero piu' grande
 
 
-        //Stampa a video nc, ovvero il numero più grande tra i tre inseriti
-        System.out.println("Il numero più grande tra quelli inseriti è il " +position + ", ovvero " + nc);
+        //caso estremo di 3 numeri uguali
+        if (n1 == n2 && n2 == n3){
+            System.out.println("I tre numeri inseriti sono uguali");
+        } else {
+            //Stampa a video nc, ovvero il numero più grande tra i tre inseriti
+            System.out.println("Il numero più grande tra quelli inseriti è il " +position + ", ovvero " + nc);
+
+        }
 
     }
 }
