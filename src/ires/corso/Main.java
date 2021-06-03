@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Il programma mi chiede di inserire 3 valori interi su terminale; li legge e salva su 3 variabili int
+        //nb: il programma non fa controlli di validità sull'input
 
         Scanner in;
         in = new Scanner(System.in);
