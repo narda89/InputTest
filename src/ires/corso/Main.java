@@ -32,21 +32,28 @@ public class Main {
 
         int nc;
 
+        //La stringa position tiene traccia dell'ordine di inserimento del numero
+        String position;
+
+
         //primo round di confronto
         if (n1 > n2){
             nc = n1;
+            position = "primo";
         } else {
             nc = n2;
+            position = "secondo";
         }
 
         //secondo e ultimo round di confronto
         if (nc < n3){
             nc = n3;
+            position = "terzo";
         } //in caso contrario, nc rimane il numero piu' grande
 
 
         //Stampa a video nc, ovvero il numero più grande tra i tre inseriti
-        System.out.println("Il numero più grande tra quelli inseriti è " + nc);
+        System.out.println("Il numero più grande tra quelli inseriti è il " +position + ", ovvero " + nc);
 
     }
 }
